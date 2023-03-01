@@ -12,7 +12,7 @@
   };
   security.sudo.wheelNeedsPassword = false; # User does not need to give password when using sudo.
 
-  time.timeZone = "Europe/Brussels";        # Time zone and internationalisation
+  time.timeZone = "Asia/Shanghai";        # Time zone and internationalisation
   i18n = {
     defaultLocale = "en_US.UTF-8";
   };
@@ -55,6 +55,9 @@
       wget
     ];
   };
+
+
+  networking.networkmanager.enable = true;
 
   services = {
     pipewire = {                            # Sound
